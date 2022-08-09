@@ -40,7 +40,7 @@ const Post = (props) => {
   );
 
   return (
-    <Card className="post-cards mx-auto">
+    <Card className="post-cards mx-auto mt-5">
       <div className="d-flex justify-content-between p-1">
         <span>{closeButton}</span>
         <span className="fst-italic smaller">{dateCreated}</span>
