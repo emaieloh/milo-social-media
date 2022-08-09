@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a8a4c3d070a243ab04c4",
+    "revision": "b0b2bbbee94bd9e01ed9",
     "url": "/milo-social-media/static/css/main.ebda0fea.chunk.css"
   },
   {
-    "revision": "a8a4c3d070a243ab04c4",
-    "url": "/milo-social-media/static/js/main.a8a4c3d0.chunk.js"
+    "revision": "b0b2bbbee94bd9e01ed9",
+    "url": "/milo-social-media/static/js/main.b0b2bbbe.chunk.js"
   },
   {
     "revision": "f7eb4b1cc53c8035a687",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/milo-social-media/static/js/runtime~main.d61d2aab.js"
   },
   {
-    "revision": "49020f1f7817ea4a4ccb91540598e844",
+    "revision": "df410db4a5e0fa0a7a4e9cfd1dffa0b8",
     "url": "/milo-social-media/index.html"
   }
 ];
