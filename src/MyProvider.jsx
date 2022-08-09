@@ -70,7 +70,9 @@ const MyProvider = (props) => {
 
   useEffect(() => {
     (async () => {
-      const { data: allPosts } = await axios("http://localhost:8080/posts/all");
+      const { data: allPosts } = await axios(
+        "https://milo-social-media.herokuapp.com/posts/all"
+      );
       allPosts.map((post) => {
         post.user = `${post.user.firstName} ${post.user.lastName}`;
         post.comments = post.comments.length;
@@ -82,11 +84,13 @@ const MyProvider = (props) => {
       setPosts([...allPosts]);
 
       const { data: allComments } = await axios(
-        "http://localhost:8080/comments/all"
+        "https://milo-social-media.herokuapp.com/comments/all"
       );
       setComments([...allComments]);
 
-      const { data: allLikes } = await axios("http://localhost:8080/likes/all");
+      const { data: allLikes } = await axios(
+        "https://milo-social-media.herokuapp.com/likes/all"
+      );
       setLikes([...allLikes]);
     })();
   }, [posts.length, liked, comments.length]);

@@ -31,7 +31,7 @@ const Registration = (props) => {
       setPasswordAlert(true);
     } else {
       const { data: user } = await axios.post(
-        "http://localhost:8080/users/signup",
+        "https://milo-social-media.herokuapp.com/users/signup",
         {
           firstName,
           lastName,

@@ -24,7 +24,7 @@ const CommentsModal = (props) => {
       setCommentAlert(true);
     } else {
       const newComment = await axios.post(
-        "http://localhost:8080/comments/add",
+        "https://milo-social-media.herokuapp.com/comments/add",
         {
           user: `${user.firstName} ${user.lastName}`,
           content: commentContent,

@@ -25,13 +25,15 @@ const Posts = ({ user, posts, setPosts, liked, setLiked }) => {
 
       const filename = imageFilename.split("/");
       await axios.delete(
-        `http://localhost:8080/posts/delete/${_id}/${filename[1]}`
+        `https://milo-social-media.herokuapp.com/posts/delete/${_id}/${filename[1]}`
       );
       setPosts([...postsCopy]);
     };
 
     const likePost = async () => {
-      await axios.post(`http://localhost:8080/likes/like/${_id}/${user._id}`);
+      await axios.post(
+        `https://milo-social-media.herokuapp.com/likes/like/${_id}/${user._id}`
+      );
       if (!liked) {
         setLiked(true);
       } else {

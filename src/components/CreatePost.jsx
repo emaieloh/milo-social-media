@@ -22,7 +22,10 @@ const CreatePost = ({ posts, setPosts }) => {
     data.append("content", content);
     data.append("image", image);
 
-    const newPost = await axios.post("http://localhost:8080/posts/add", data);
+    const newPost = await axios.post(
+      "https://milo-social-media.herokuapp.com/posts/add",
+      data
+    );
     setPosts([newPost, ...posts]);
     navigate("/");
   };
