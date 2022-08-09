@@ -31,7 +31,7 @@ const CreatePost = ({ posts, setPosts }) => {
   };
 
   return (
-    <Container>
+    <Container className="mt-5">
       <Form onSubmit={submitPost}>
         <Form.Control
           type="file"
