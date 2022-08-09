@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/milo-social-media/precache-manifest.e1dbef6c3aca8016bebb0a5ba4c79ca2.js"
+  "/milo-social-media/precache-manifest.bc6287f0adf222866ebfa82b3775d343.js"
 );
 
 workbox.clientsClaim();
