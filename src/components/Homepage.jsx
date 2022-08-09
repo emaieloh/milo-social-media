@@ -19,7 +19,7 @@ const Homepage = () => {
       <NavigationBar user={user} />
       <Routes>
         <Route
-          path="/"
+          path="/milo-social-media"
           element={
             <Posts
               user={user}
